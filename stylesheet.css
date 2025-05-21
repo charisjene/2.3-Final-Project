@@ -946,11 +946,6 @@ TESTIMONIALS
     position: relative;
 }
 
-.testimonials__img {
-    
-    
-}
-
 .testimonials__description {
     display: flex;
     flex-direction: column;
@@ -1615,9 +1610,9 @@ footer {
     width: 100%;
   }
 
-  .footer__column {
-    width: 100%
-  }
+   .footer__column {
+        width: calc(100% / 3);
+    }
 
   .highlight:not(:last-child) {
     margin-bottom: 24px;

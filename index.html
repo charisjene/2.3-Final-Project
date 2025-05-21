@@ -41,6 +41,9 @@
                     </button>
                         <ul class="menu__links">
                              <li class="menu__list">
+                                <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+                            </li>
+                             <li class="menu__list">
                                 <a href="#features" class="menu__link" onclick="closeMenu()">About</a>
                             </li>
                             <li class="menu__list">
@@ -603,6 +606,18 @@
     
 
    </footer>
-    
+    <script>
+  const menuBtn = document.querySelector('.btn__menu');
+  const closeBtn = document.querySelector('.btn__menu--close');
+  const body = document.querySelector('body');
+
+  menuBtn.addEventListener('click', () => {
+    body.classList.add('menu--open');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    body.classList.remove('menu--open');
+  });
+</script>
 </body>
 </html>
